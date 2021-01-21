@@ -1,5 +1,5 @@
 with open("input.txt","r") as f:
-    x=f.readline()
+    x=list(f.readline())
     l1=(list(x))
     print("Lista 1=",l1)
     l2=sorted(l1)
