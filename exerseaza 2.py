@@ -1,21 +1,19 @@
-with open('input.txt','r') as f:
+with open("input.txt","r") as f:
     x=f.readline()
-with open('rezultat.txt','w')as f:
-    f.write(str(x))    
-y=sorted(x)
-with open('rez.txt','w')as f:
-    f.write(str(y))
-x.sort(reverse=True)
-with open('rez.txt','w')as f:
-    f.write(str(x))
-x=[1,2,3,4,5]
-with open('rez.txt','w')as f:
-    f.write(str(len(x)))
-    f.write(str(max(x)))
-    f.write(str(min(x)))
-with open('rez.txt','w')as f:
-    f.write(str(x+[111]))
-x.insert(2,222)
-with open('rez.txt','w')as f:
-    f.write(str(x))    
+    l1=(list(x))
+    print("Lista 1=",l1)
+    l2=sorted(l1)
+    print("Lista crescator=",l2)
+    l3=list(x)
+    l3.sort(reverse=True)
+    print("Lista descrescator=",l3)
+    print("Lungimea=",len(l1))
+    print("MAX=",max(l1))
+    print("MIN=",min(l1))
+    l4=list(x)
+    l4.extend([111])
+    print("Lista cu adaugarea 111 =",l4)
+    l5=list(x)
+    l5.insert(2,222)
+    print("Lista cu adaugarea 222 =",l5)
 
